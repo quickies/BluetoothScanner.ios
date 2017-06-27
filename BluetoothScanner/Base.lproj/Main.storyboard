@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Items-->
+        <!--Devices-->
         <scene sceneID="sMT-hF-zCY">
             <objects>
                 <tableViewController id="aDB-wg-86B" customClass="ItemsViewController" customModule="BluetoothScanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,12 +36,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="Ka1-f4-jlc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="Vem-bU-Ccv" detailTextLabel="hm0-yO-FXd" style="IBUITableViewCellStyleValue1" id="Ka1-f4-jlc">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ka1-f4-jlc" id="Txd-dJ-ZvB">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vem-bU-Ccv">
+                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hm0-yO-FXd">
+                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -50,7 +66,7 @@
                             <outlet property="delegate" destination="aDB-wg-86B" id="ocf-vz-vTa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="V1X-fa-HfY"/>
+                    <navigationItem key="navigationItem" title="Devices" id="V1X-fa-HfY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7T-4W-hPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
